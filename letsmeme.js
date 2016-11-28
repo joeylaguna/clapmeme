@@ -8,12 +8,12 @@ $(document).ready(function(){
     var newMeme = [];
     arr.forEach(function(value){
       if(value===' '){
-        newMeme.push(':clap:');
+        newMeme.push(' :clap: ');
       }else{
       	newMeme.push(value);
       }
     });
-    var test = emojify.replace(newMeme.join(' '));
+    var test = emojify.replace(newMeme.join(''));
     $(".memeSection").html(test);
   });
 });
