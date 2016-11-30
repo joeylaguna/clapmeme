@@ -46,7 +46,7 @@ $(document).ready(function(){
       
       speechSynthesis.speak(msg);
     }
-    clapsay(newMeme.join(''));
+    clapsay(original.join(''));
     });
 });
 
