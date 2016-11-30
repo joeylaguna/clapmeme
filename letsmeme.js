@@ -4,7 +4,7 @@ $(document).ready(function(){
 
   $(document.body).on('click', '.memeStr', function() {
   	var checked = $(".caps").prop('checked');
-  	console.log(checked);
+  	var spaceChecked = $(".space").prop('checked');
     var original = $('.meme').val().split('');
     var newMeme = original.map(function(value) {
       if(value === ' '){
