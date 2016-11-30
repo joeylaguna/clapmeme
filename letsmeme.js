@@ -3,7 +3,8 @@ $(document).ready(function(){
   $memeSection.appendTo('body');
 
   $(document.body).on('click', '.memeStr', function() {
-  	var checked = document.querySelector('.caps:checked').value;
+  	var checked = $(".caps").prop('checked');
+  	console.log(checked);
     var original = $('.meme').val().split('');
     var newMeme = original.map(function(value) {
       if(value === ' '){
