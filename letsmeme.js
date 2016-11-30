@@ -8,12 +8,11 @@ $(document).ready(function(){
     var newMeme = [];
     arr.forEach(function(value){
       if(value===' '){
-        newMeme.push(' :clap: ');
+        newMeme.push(' \uD83D\uDC4F ');
       }else{
       	newMeme.push(value);
       }
     });
-    var test = emojify.replace(newMeme.join(''));
-    $(".memeSection").html(test);
+    $(".memeSection").html(newMeme.join(''));
   });
 });
