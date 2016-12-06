@@ -10,7 +10,7 @@ $(document).ready(function(){
     var original = $('.meme').val().split('');
     var newMeme = original.map(function(value) {
       if(value === ' '){
-        return ('\uD83D\uDC4F');
+        return (' \uD83D\uDC4F ');
       }else{
       	if(checked){
       	  return value.toUpperCase();
@@ -19,6 +19,9 @@ $(document).ready(function(){
       	}
       }
     });
+
+    newMeme.unshift('\uD83D\uDC4F ');
+    newMeme.push('\uD83D\uDC4F');
 
     $(".memeSection").html(newMeme.join(''));
 
