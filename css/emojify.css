@@ -9,3 +9,9 @@ body {
   margin-bottom: -0.25em;
   background-size: contain;
 }
+
+.hiddenMeme {
+	position: fixed;
+	top: 100%;
+	right: 100%;
+}
