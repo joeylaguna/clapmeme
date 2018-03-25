@@ -38,8 +38,9 @@ function clapsay(text) {
     msg.text = item;
     msg.lang = 'en-US';
 
-    msg.onend = function(event) {
+    msg.onboundary = function(event) {
       console.log('Finished in ' + event.elapsedTime + ' seconds.');
+      clapsound.play();
     };
     
     msg.onend = function(event) {
