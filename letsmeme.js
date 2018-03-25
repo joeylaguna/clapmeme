@@ -2,7 +2,7 @@ var clapsound = new Audio('clap.wav');
     
 function clapMeme() {
   var checked = $(".caps").prop('checked');
-  var original = $('.meme').val().split('');
+  var original = $('.meme').trim().val().split('');
   var newMeme = original.map(function(value) {
     if(value === ' '){
       return (' \uD83D\uDC4F ');
