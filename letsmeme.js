@@ -1,9 +1,9 @@
-var clapsound = new Audio('clap.wav');
+const clapsound = new Audio('clap.wav');
     
 function clapMeme() {
-  var checked = $(".caps").prop('checked');
-  var original = $('.meme').trim().val().split('');
-  var newMeme = original.map(function(value) {
+  const checked = $(".caps").prop('checked');
+  const original = $('.meme').val().trim().split('');
+  const newMeme = original.map(function(value) {
     if(value === ' '){
       return (' \uD83D\uDC4F ');
     }else{
